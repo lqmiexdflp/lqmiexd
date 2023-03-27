@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marquee</title>
+    <link rel="icon" href="https://vk.com/emoji/e/f09f98a8.png">
+    <style>
+   @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@200&display=swap');
+   body {
+       background-image: url("https://i.gifer.com/VhkF.gif");
+       background-repeat: no-repeat;
+       background-color: black;
+       background-size: 30%;
+       background-position-x: 467px;
+       background-position-y: 60px;
+       
+   }
+    marquee {
+        border: solid;
+        border-color: dimgray;
+        background: rgb(140, 140, 140);
+        color: white; 
+        font-family: 'Kanit', sans-serif;
+        height: 50px;
+        font-size: 48px;
+        transition: 1s ease-in-out;
+    }
+
+    marquee:hover {
+        transform: scale(0.8);
+        color: dimgray;
+        background: white;
+        border-radius: 10px;
+    }
+    .html-code {
+        border: 1px solid #ccc;
+        background: #f5f5f5;
+        font-family: 'Consolas';
+        font-size: 12px;
+        margin: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .html-text {
+        font-size: 20px;
+        text-align: center;
+        transition: 0.6s ease-in-out;
+        color: white;
+    }
+    .html-text:hover {
+        font-size: 30px;
+    }
+    .css-text {
+        font-size: 20px;
+        text-align: center;
+        transition: 0.6s ease-in-out;
+        color: white;
+    }
+    .css-text:hover {
+        font-size: 30px;
+    }
+    .css-code {
+        border: 1px solid #ccc;
+        background: #f5f5f5;
+        font-family: 'Consolas';
+        font-size: 12px;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        color: white;
+    }
+    .copyright-one {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        transform: translateY(-20px);
+        color: white;
+    }
+    .link {
+        position: relative;
+        left: 565px;
+        bottom: 35px;
+        margin-top: 20px;
+        font-family: 'Sofia Sans Semi Condensed', sans-serif;
+        transform: translateY(-20px);
+        color: white;
+    }
+    .copyright-text {
+        transform: translateY(10px);
+    }
+    </style>
+</head>
+<body>
+
+    <marquee scrollamount="15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, tenetur?</marquee>
+    <p class="html-text">HTML</p>
+    <p class="html-code" id="html-code";><code>&lt;marquee scrollamount="15"&gt;
+            <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, tenetur?
+        <br />
+        &lt;/marquee&gt;
+        <br />
+    </code>
+    </p>
+    <p class="css-text">CSS<p class="css-code">
+    &lt;style&gt;
+    <br />
+   @import url('https://fonts.googleapis.com/css2?family=Kanit&amp;display=swap');
+   <br />
+    marquee {
+        <br />
+        border: solid;
+        <br />
+        border-color: dimgray;
+        <br />
+        background: rgb(140, 140, 140);
+        <br />
+        color: white; 
+        <br />
+        font-family: 'Kanit', sans-serif;
+        <br />
+        height: 50px;
+        <br />
+        font-size: 48px;
+        <br />
+        transition: 1s ease-in-out;
+        <br />
+    }
+    <br />
+
+    marquee:hover {
+        <br />
+        transform: scale(0.8);
+        <br />
+        color: dimgray;
+        <br />
+        background: white;
+        <br />
+        border-radius: 10px;
+        <br />
+    }
+    <br />
+&lt;/style&gt;
+<br />
+    </p>
+    <div class="copyright-text">
+    <p class="copyright">©LQMIEXD, March 27th, 2023.</p>
+    <p class="copyright-one">All rights reversed. The code is free to use.</p>
+    <a class="link" href="https://vk.com/albaiulia_st_4life">https://vk.com/albaiulia_st_4life</a>
+</div>
+</body>
+</html>
