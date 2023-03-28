@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated List</title>
+    <link rel="icon" href="https://vk.com/emoji/e/f09f98a8.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@200&display=swap');
+        
+        body {
+            background-image: url("https://i.gifer.com/VhkF.gif");
+            background-repeat: no-repeat;
+            background-color: black;
+            background-size: 30%;
+            background-position-x: 467px;
+            background-position-y: 210px;
+        }
+        li {
+            display: inline-block;
+            position: relative;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-size: 50px;
+            cursor: pointer;
+            transition: 0.4s all ease;
+            text-align: center;
+            font-family: "Kanit";
+            margin-left: 50px;
+            opacity: 0;
+            animation: ali 1s forwards;
+        }
+        @keyframes ali {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        li:hover {
+            color: #cdcdcd;
+            transition: 0.4s all ease;
+        }
+        li::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #0051ff;
+            transform-origin: bottom-right;
+            transition: transform 0.5s ease-out;
+        }
+        li:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom-left;
+        }
+        ul {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .html-text {
+            color: white;
+            transition: 1s all ease-in-out;
+            text-align: center;
+            opacity: 0;
+            animation: ali1 2s forwards;
+        }
+        
+        .html-text:hover {
+            font-size: 30px;
+        }
+        .html-code {
+            border: 1px solid #ccc;
+        background: #f5f5f5;
+        font-family: 'Consolas';
+        font-size: 12px;
+        margin: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+            animation: ali1 2s forwards;
+        }
+        @keyframes ali1 {
+            0% { opacity: 0; }
+            25% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .css-text {
+            color: white;
+            text-align: center;
+            transition: 1s all ease-in-out;
+            opacity: 0;
+            animation: ali2 3s forwards;
+        }
+        .css-text:hover {
+            font-size: 30px;
+        }
+
+        .css-code {
+        border: 1px solid #ccc;
+        background: #f5f5f5;
+        font-family: 'Consolas';
+        font-size: 12px;
+        margin: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+            animation: ali2 3s forwards;
+        }
+        @keyframes ali2 {
+            0% { opacity: 0; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .copyright {
+            color: white;
+            font-family: 'Sofia Sans Semi Condensed', sans-serif;
+            text-align: center;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            font-size: 10px;
+            transform: translateY(-150%);
+            animation: ani3 1s forwards;
+        }
+        @keyframes ani3 {
+            0% {transform: translateY(-150%);}
+            100% {transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+        
+    <ul class="list">
+        <a href="https://vk.com/albaiulia_st_4life"><li>Home</li></a>
+        <a href="https://vk.com/albaiulia_st_4life"><li>About</li></a>
+        <a href="https://vk.com/albaiulia_st_4life"><li>Blog</li></a>
+        <a href="https://vk.com/albaiulia_st_4life"><li>Contact</li></a>
+    </ul>
+    <p class="html-text">HTML</p>
+    <div class="html-code">
+    <p>&lt;ul class=&quot;list&quot;&gt;
+        <pre></pre>
+            &lt;li&gt;Home&lt;/li&gt;
+            <pre></pre>
+            &lt;li&gt;About&lt;/li&gt;
+            <pre></pre>
+            &lt;li&gt;Blog&lt;/li&gt;
+            <pre></pre>
+            &lt;li&gt;Contact&lt;/li&gt;
+            <pre></pre>
+        &lt;/ul&gt;</p>
+        <pre></pre>
+    </div>
+    <p class="css-text">CSS</p>
+    <div class="css-code">
+        <p>li {
+            <pre></pre>
+                display: inline-block;
+                <pre></pre>
+                position: relative;
+                <pre></pre>
+                color: #ffffff;
+                <pre></pre>
+                font-family: sans-serif;
+                <pre></pre>
+                font-size: 50px;
+                <pre></pre>
+                cursor: pointer;
+                <pre></pre>
+                transition: 0.4s all ease;
+                <pre></pre>
+                text-align: center;
+                <pre></pre>
+                font-family: "Kanit";
+                <pre></pre>
+                margin-left: 50px;
+                <pre></pre>
+            }
+            <pre></pre>
+            li:hover {
+                <pre></pre>
+                color: #cdcdcd;
+                <pre></pre>
+                transition: 0.4s all ease;
+                <pre></pre>
+            }
+            <pre></pre>
+            li::after {
+                <pre></pre>
+                content: '';
+                <pre></pre>
+                position: absolute;
+                <pre></pre>
+                width: 100%;
+                <pre></pre>
+                transform: scaleX(0);
+                <pre></pre>
+                height: 2px;
+                <pre></pre>
+                bottom: -5px;
+                <pre></pre>
+                left: 0;
+                <pre></pre>
+                background-color: #0051ff;
+                <pre></pre>
+                transform-origin: bottom-right;
+                <pre></pre>
+                transition: transform 0.5s ease-out;
+                <pre></pre>
+            }
+            <pre></pre>
+            li:hover::after {
+                <pre></pre>
+                transform: scaleX(1);
+                <pre></pre>
+                transform-origin: bottom-left;
+                <pre></pre>
+            }
+            <pre></pre>
+        </p>
+    </div>
+    <p class="copyright">©LQMIEXD, March 28th, 2023.</p>
+    <p class="copyright">All rights reversed. The code is free to use.</p>
+</body>
+</html>
