@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Types</title>
+    <link rel="icon" href="https://vk.com/emoji/e/f09f98a8.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@200&display=swap');
+        body {
+            background-color: black;
+            background-image: url('https://i.gifer.com/myh.gif');
+            background-repeat: no-repeat;
+            background-position-x: 420px;
+            text-align: center;
+            font-family: "Kanit", sans-serif;
+            color: white;
+            opacity: 0;
+            animation: ali 1.5s forwards;
+            filter:blur(0px);
+        }
+        @keyframes ali {
+            0% { transform:translateY(-100px); opacity: 0; filter:blur(5px); }
+            100% { transform:translateY(0px); opacity: 1; filter:blur(0px); }
+        }
+        .main-text {
+            font-size: 40px;
+            transition: 0.7s all ease-in-out;
+            cursor: pointer;
+        }
+        .main-text:hover {
+            font-size: 50px;
+        }
+        .copyright {
+            font-family: 'Sofia Sans Semi Condensed', sans-serif;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+        <p class="main-text">Input Types in HTML</p>
+        <div class="text">
+        <p>&lt;input type=&quot;text&quot;&gt;</p>
+        <input type="text">
+    </div>
+        <div class="password">
+        <p>&lt;input type=&quot;password&quot;&gt;</p>
+        <input type="password">
+    </div>
+    <div class="radio">
+        <p>&lt;input type=&quot;radio&quot;&gt;</p>
+        <input type="radio">
+        <input type="radio">
+    </div>
+    <div class="image">
+        <p>&lt;input type=&quot;image&quot;&gt;</p>
+        <input type="image">
+    </div>
+    <div class="checkbox">
+        <p>&lt;input type=&quot;checkbox&quot;&gt;</p>
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+    <div class="button">
+        <p>&lt;input type=&quot;button&quot;&gt;</p>
+        <input type="button">
+    </div>
+    <div class="color">
+        <p>&lt;input type=&quot;color&quot;&gt;</p>
+        <input type="color">
+    </div>
+    <div class="email">
+        <p>&lt;input type=&quot;email&quot;&gt;</p>
+        <input type="email">
+    </div>
+    <div class="file">
+        <p>&lt;input type=&quot;file&quot;&gt;</p>
+        <input type="file">
+    </div>
+    <p class="copyright">©LQMIEXD, March 28th, 2023.</p>
+    <p class="copyright">All rights reversed. The code is free to use.</p>
+</body>
+</html>
