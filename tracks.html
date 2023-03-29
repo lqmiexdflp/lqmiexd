@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Tracks</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+        .scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 300px;
+  margin-right: 30px;
+  scroll-snap-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.scroll-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scroll-item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  font-family: "Kanit", sans-serif;
+}
+
+.scroll-item:hover .scroll-item-content {
+  opacity: 1;
+}
+
+.scroll-item-content h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.scroll-item-content p {
+  color: #fff;
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 80%;
+  line-height: 1.5;
+}
+    </style>
+</head>
+<body>
+        <div class="scroll-container">
+                <div class="scroll-item" onclick="document.location.href = 'https://vk.com/music/album/-2000402704_15402704_9d23509d3f0ffcef5d';">
+                  <img src="https://avatars.yandex.net/get-music-content/6202531/0f8ad174.a.22432109-1/m1000x1000?webp=false" alt="Image 1" >
+                  <div class="scroll-item-content">
+                    <h2>A DAY OUTSIDE</h2>
+                    <p>LQMIEXD, CHIMERA PLAYA</p>
+                  </div>
+                </div>
+                <div class="scroll-item" onclick="document.location.href = 'https://vk.com/music/album/-2000496870_16496870_0d1ef49e66de399082';">
+                  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/25/ec/7c/25ec7cc7-347d-47e6-0dbe-67e3601abd09/cover.jpg/1200x1200bf-60.jpg" alt="Image 2">
+                  <div class="scroll-item-content">
+                    <h2>Lacrima II</h2>
+                    <p>LQMIEXD, NEIRU</p>
+                  </div>
+                </div>
+                <div class="scroll-item" onclick="document.location.href = 'https://vk.com/music/album/-2000342301_17342301_dd385048bae42a306f';">
+                  <img src="https://sun9-63.userapi.com/impg/VhrmDRwPiO1LvOvyYOv4RZsYZXBDh5Lhn2lgWw/WpbP--qWIxA.jpg?size=1280x1280&quality=96&sign=efd1e9369ac2137f1b02acbc4be50ec3&type=album" alt="Image 3">
+                  <div class="scroll-item-content">
+                    <h2>ACID DREAMS</h2>
+                    <p>LQMIEXD, PIXHADD</p>
+                  </div>
+                </div>
+                <div class="scroll-item" onclick="document.location.href = 'https://vk.com/music/album/-2000849305_15849305_7a44a630057a71aef5';">
+                  <img src="https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/05/37/de/0537de29-36a6-5776-c5b1-17a69ea1ca0a/cover.jpg/1200x1200bf-60.jpg" alt="Image 4">
+                  <div class="scroll-item-content">
+                    <h2>MELANCHOLIA</h2>
+                    <p>LQMIEXD</p>
+                  </div>
+                </div>
+                <div class="scroll-item" onclick="document.location.href = 'https://vk.com/music/album/-2000428840_15428840_43e07d5337918a617f';">
+                  <img src="https://avatars.yandex.net/get-music-content/5966316/a9df12dc.a.22457924-1/m1000x1000?webp=false" alt="Image 5">
+                  <div class="scroll-item-content">
+                    <h2>EVIL ASURA</h2>
+                    <p>LQMIEXD, ROXSH LUXIRY, hrd $troww</p>
+                  </div>
+                </div>
+              </div>
+</body>
+</html>
