@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercedes Cars for Free!</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/55/55283.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    html, body {
+      background-image: url('https://i.pinimg.com/originals/d0/db/15/d0db159b72a61a0c866e5f13bdf2a650.jpg');
+      filter:brightness(80%);
+      animation: ali 3s forwards;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    @keyframes ali {
+   0% { filter: brightness(0%) }
+   100% { filter: brightness(80%)}
+  }
+    .Glav{
+   text-align: center;
+   transform: translateY(-100px);
+   animation: ali1 1.5s forwards;
+   animation-delay: 2s;
+   font-family: "Kanit", sans-serif;
+   font-size: 40px;
+  }
+  @keyframes ali1 {
+    0% { transform: translateY(-500px);}
+    100% { transform: translateY(350px);}
+  }
+  .info-box {
+    text-align: center;
+    transform: translateY(-1000px);
+    animation: ali2 1.5s forwards;
+    animation-delay: 3s;
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+  }
+  @keyframes ali2 {
+    0% { transform: translateY(-500px);}
+    100% { transform: translateY(310px);}
+  }
+  .mashina{
+  filter:brightness(0%);
+  animation: ali 3s forwards;
+  }
+  @keyframes ali {
+   0% { filter: brightness(0%) }
+   100% { filter: brightness(100% )}
+  }
+  .info-box button {
+    background-image: linear-gradient(crimson, lightblue);
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    border: 0px solid black;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+  }
+  .info-box button:hover {
+    font-size: 25px;
+  }
+  li {
+
+display: inline-block;
+position: relative;
+color: black;
+font-family: sans-serif;
+font-size: 50px;
+cursor: pointer;
+transition: 0.4s all ease;
+text-align: center;
+font-family: "Kanit";
+margin-left: 50px;
+animation: ali5 2s forwards;
+transform: translateY(-400px);
+}
+li:hover {
+color: #cdcdcd;
+transition: 0.4s all ease;
+}
+li::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: -5px;
+left: 0;
+background-color: #0051ff;
+transform-origin: bottom-right;
+transition: transform 0.5s ease-out;
+}
+li:hover::after {
+transform: scaleX(1);
+transform-origin: bottom-left;
+}
+.list {
+  bottom: 300px;
+}
+@keyframes ali5 {
+  0% { transform: translateY(-400px) }
+  100% { transform: translateY(-200px) }
+}
+  </style>
+</head>
+<body>
+  <div class="Glav">
+<p>
+   Mercedes Cars for Free!
+  </p>
+</div>
+  <div class="info-box">
+  <p>
+    Get a free Mercedes car for doing a few easy steps!
+  </p>
+  <button onclick="location.href='form.html'">Get Mercedes!</button>
+</div>
+<ul class="list">
+  <a href="cv.html"><li>Home</li></a>
+  <a href="about.html"><li>About</li></a>
+  <a href="https://vk.com/albaiulia_st_4life"><li>Blog</li></a>
+  <a href="https://vk.com/albaiulia_st_4life"><li>Contact</li></a>
+</ul>
+</body>
+</html>
